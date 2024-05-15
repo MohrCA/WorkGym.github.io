@@ -1,0 +1,123 @@
+
+
+body {
+    background-color: rgb(17, 17, 17);
+    font-family: "Nunito Sans", sans-serif
+    /* Color de texto predeterminado para toda la página */
+}
+
+.header{
+    
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    cursor: pointer;
+    list-style: none;
+
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    color:azure;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: azure;
+
+}
+
+.header .nav-links .nav-cont{
+    background-color: rgb(216, 151, 29);
+    padding: 4px;
+    border-radius: 6px;
+}
+
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#contactForm {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: azure; 
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(216, 151, 29);
+    width: 300px;
+}
+
+#contactForm div {
+    margin-bottom: 10px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: calc(100% - 16px); /* Resta 16px para el padding (8px a cada lado) */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid azure;
+    background-color: rgb(40, 40, 40);
+    color: azure;
+    margin-bottom: 10px; /* Agrega un espacio entre los elementos */
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: azure;
+    color: rgb(22, 22, 22);
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+}

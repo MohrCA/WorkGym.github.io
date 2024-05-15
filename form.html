@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styleform.css">
+    <script src="js/scriptform.js"></script>
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="logo/logotipo-letra-barra-logotipo-fitness-gym-diseno-logotipo-vectorial-fitness-gimnasio-fitness_227744--removebg-preview.png"
+                alt="logo del gimansio"></a>
+        </div>
+        <nav>          
+            <ul class="nav-links">
+                <li>
+                    <a href="">Acerca de</a>
+                </li>
+                <li>
+                    <a href="">Resultados</a>
+                </li>
+                <li>
+                    <a href="form.html" class="nav-cont">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formulario">
+    <form id="contactForm">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+
+    <div id="resultado"></div>
+
+    
+</body>
+</html>
