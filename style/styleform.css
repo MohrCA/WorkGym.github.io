@@ -1,19 +1,28 @@
 *{
     padding: 0px;
     margin: 0px;
-
-}
-
-
-html body {
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(17, 17, 17);
+    font-size: 20px;
     font-family: "Nunito Sans", sans-serif
-    /* Color de texto predeterminado para toda la página */
 }
 
 
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+.header{
+    background-color: rgb(22, 22, 22);
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    left: 0; /* Lo coloca en el lado izquierdo */
+    width: 100%; /* Hace que ocupe todo el ancho de la ventana */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
 
 .header .logo{
     cursor: pointer;
@@ -30,8 +39,11 @@ html body {
 }
 
 .header .nav-links{
+    display: flex;
     cursor: pointer;
     list-style: none;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
@@ -64,7 +76,7 @@ html body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 160vh;
     width: 100%;
 }
 
@@ -115,23 +127,9 @@ html body {
     cursor: pointer;
 }
 
+
+
 #resultado {
     margin-top: 20px;
 }
-.header{
-    
-    font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;
-    background-color: rgb(22, 22, 22);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    border: none;
-    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
-    top: 0; /* Coloca el encabezado en la parte superior */
-    left: 0; /* Coloca el encabezado en el lado izquierdo */
-    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
-    z-index: 1000; /* Asegura que el encabezado esté en la parte superior de otros elementos */
 
-}
