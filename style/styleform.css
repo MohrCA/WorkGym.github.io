@@ -1,24 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
 
 
-body {
+html body {
+    padding: 0px;
+    margin: 0px;
     background-color: rgb(17, 17, 17);
     font-family: "Nunito Sans", sans-serif
     /* Color de texto predeterminado para toda la página */
 }
 
-.header{
-    
-    padding: 0px;
-    margin: 0px;
-    font-size: 20px;
-    font-family: "Nunito Sans", sans-serif;
-    background-color: rgb(22, 22, 22);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
-}
+
 
 .header .logo{
     cursor: pointer;
@@ -65,13 +60,15 @@ body {
 
 
 .formulario{
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100%;
 }
 
-#contactForm {
+.contactForm {
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
     padding: 0;
@@ -83,18 +80,18 @@ body {
     width: 300px;
 }
 
-#contactForm div {
+.contactForm div {
     margin-bottom: 10px;
 }
 
-#contactForm label {
+.contactForm label {
     display: block;
     margin-bottom: 5px;
 }
 
-#contactForm input[type="text"],
-#contactForm input[type="email"],
-#contactForm textarea {
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
     width: calc(100% - 16px); /* Resta 16px para el padding (8px a cada lado) */
     padding: 8px;
     border-radius: 5px;
@@ -104,11 +101,11 @@ body {
     margin-bottom: 10px; /* Agrega un espacio entre los elementos */
 }
 
-#contactForm textarea {
+.contactForm textarea {
     resize: vertical;
 }
 
-#contactForm button[type="submit"] {
+.contactForm button[type="submit"] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -120,4 +117,21 @@ body {
 
 #resultado {
     margin-top: 20px;
+}
+.header{
+    
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    border: none;
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0; /* Coloca el encabezado en la parte superior */
+    left: 0; /* Coloca el encabezado en el lado izquierdo */
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el encabezado esté en la parte superior de otros elementos */
+
 }
