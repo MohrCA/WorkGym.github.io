@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/styleform.css">
-    <script src="js/scriptform.js"></script>
     <title>Formulario de Contacto</title>
 </head>
 <body>
@@ -33,7 +32,7 @@
     </header>
 
     <div class="formulario">
-    <form class="contactForm">
+    <form class="contactForm" novalidate>
 <!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:2666697733. -->
         <h2 class="formtittle">ASESORATE HOY MISMO CON NOSOTROS</h2>
         <h3 class="formstittle"> DEJANOS TUS DATOS:</h3>
@@ -57,11 +56,13 @@
         <div class="imputes">
             <button type="submit">ENVIAR</button>
         </div>
+
+        <div id="resultado"></div>
+
     </form>
 </div>
 
-    <div id="resultado"></div>
-
+    <script src="js/scriptform.js"></script>
     
 </body>
 </html>
