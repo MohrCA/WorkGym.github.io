@@ -91,7 +91,7 @@ section {
     overflow: hidden;
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 4vw;
     border-style: ridge;
     border-left: none;
     border-right: none;
@@ -99,11 +99,13 @@ section {
 }
 
 .contenedor {
-    width: 800px;
-    padding-top: 100px;
+    width: 70vw;
+    padding-top: 100px auto;
     margin-left: 30px;
     font-family: "Nunito Sans", sans-serif, bold;
 }
+
+
 
 .contenedor2 {
     display: flex;
@@ -142,6 +144,7 @@ section {
     text-align: center;
 }
 
+
 .contenedor4 {
     display: flex;
     border-radius: 10px;
@@ -161,7 +164,7 @@ section {
 }
 
 .tamImagen {
-    width: 100%;
+    width: auto;
     height: auto;
     background: url(/imagenes/Background3.jpg);
     background-size: contain;
@@ -174,10 +177,10 @@ section {
 
 .letraSection {
     background: linear-gradient(to right, #FFA500, #FFFF00);
-    font-size: 140px;
+    font-size: 10vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 150px;
-    padding-top: 10px;
+    line-height: 10vw;
+    padding-top: 50px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -206,9 +209,7 @@ footer {
     color: grey;
 }
 
-.listaFooter ul li {
-    transition: all 0.3s;
-}
+
 
 .contenido {
     text-align: center;
@@ -223,9 +224,9 @@ footer {
     flex-direction: row;
     flex: 1;
     padding-bottom: 50px;
-    justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 120px;
+    justify-content: space-around;
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 #color {
