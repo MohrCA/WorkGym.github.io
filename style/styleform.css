@@ -7,16 +7,18 @@
 
 
 body {
-    background-color: rgb(17, 17, 17);
+    /*background-color: rgb(17, 17, 17);*/
+    background: 
+		linear-gradient(rgb(53, 53, 53), rgb(0, 0, 0));
 }
 
 .header{
     background-color: rgb(22, 22, 22);
-    position: fixed; /* Fija el encabezado en la parte superior */
-    top: 0; /* Lo coloca en la parte superior de la ventana */
-    left: 0; /* Lo coloca en el lado izquierdo */
-    width: 100%; /* Hace que ocupe todo el ancho de la ventana */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    /*position: fixed; /* Fija el encabezado en la parte superior */
+    /*top: 0; /* Lo coloca en la parte superior de la ventana */
+    /*left: 0; /* Lo coloca en el lado izquierdo */
+    /*width: 100%; /* Hace que ocupe todo el ancho de la ventana */
+    /*z-index: 1000; /* Asegura que esté por encima de otros elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +78,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -86,26 +88,30 @@ body {
     padding: 0;
     color: azure; 
     background-color: rgb(22, 22, 22);
-    padding: 20px;
+    padding: 35px;
     border-radius: 10px;
-    border: 2px solid rgb(216, 151, 29);
-    width: 300px;
+    border: 1px solid azure;
+    width: 400px;
+    box-shadow: 0 0 15px 1px rgb(216, 151, 29);
+    
 }
 
 .contactForm div {
     margin-bottom: 10px;
+    
 }
 
 .contactForm label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .contactForm input[type="text"],
 .contactForm input[type="email"],
+.contactForm input[type="tel"],
 .contactForm textarea {
     width: calc(100% - 16px); /* Resta 16px para el padding (8px a cada lado) */
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid azure;
     background-color: rgb(40, 40, 40);
@@ -122,9 +128,26 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: azure;
-    color: rgb(22, 22, 22);
+    background-color: rgb(216, 151, 29);
+    color: azure;
     cursor: pointer;
+}
+
+.contactForm button[type="submit"]:hover {
+    box-shadow: 0 0 0 2px azure, 0 0 0 4px rgb(216, 151, 29);
+}
+
+.formtittle {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.formstittle{
+    font-size: 14px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: montserrat;
 }
 
 
