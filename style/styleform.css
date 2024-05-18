@@ -1,3 +1,5 @@
+
+/* RESETEO DE ESTILOS */
 *{
     padding: 0px;
     margin: 0px;
@@ -6,8 +8,9 @@
 }
 
 
+
+/* ESTILOS PARA EL BODY EN GENERAL */
 body {
-    /*background-color: rgb(17, 17, 17);*/
     background: 
 		linear-gradient(rgb(53, 53, 53), rgb(0, 0, 0));
         background-attachment: fixed;
@@ -19,19 +22,20 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* ESTILOS PARA EL NAV */
+
+
+/* UBICACIÓN DEL MENU  */
 .header{
     background-color: rgb(22, 22, 22);
-    /*position: fixed; /* Fija el encabezado en la parte superior */
-    /*top: 0; /* Lo coloca en la parte superior de la ventana */
-    /*left: 0; /* Lo coloca en el lado izquierdo */
-    /*width: 100%; /* Hace que ocupe todo el ancho de la ventana */
-    /*z-index: 1000; /* Asegura que esté por encima de otros elementos */
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
 }
+
+/* ESTILOS PARA EL LOGO */
 
 .header .logo{
     cursor: pointer;
@@ -47,12 +51,11 @@ body::-webkit-scrollbar {
     transform: scale(1.2);
 }
 
+/* ESTILOS PARA LOS LINKS (LAS OTRAS PAGINAS) */
+
 .header .nav-links{
-    display: flex;
     cursor: pointer;
     list-style: none;
-    justify-content: flex-start;
-    align-items: center;
 
 }
 
@@ -74,12 +77,14 @@ body::-webkit-scrollbar {
 
 .header .nav-links .nav-cont{
     background-color: rgb(216, 151, 29);
-    padding: 4px;
+    padding: 2px 4px;
     border-radius: 6px;
 }
 
 
+/* ESTILOS PARA EL FORMULARIO */
 
+/* UBICAIÓN DEL FORM */
 .formulario{
 
     display: flex;
@@ -89,6 +94,7 @@ body::-webkit-scrollbar {
     padding-top: 120px;
 }
 
+/* RECUADRO DE FORM */
 .contactForm {
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
@@ -113,23 +119,25 @@ body::-webkit-scrollbar {
     margin-bottom: 0px;
 }
 
+/* INPUTS DE FORM */
 .contactForm input[type="text"],
 .contactForm input[type="email"],
 .contactForm input[type="tel"],
 .contactForm textarea {
-    width: calc(100% - 16px); /* Resta 16px para el padding (8px a cada lado) */
+    width: calc(100% - 16px);
     padding: 10px;
     border-radius: 5px;
     border: 1px solid azure;
     background-color: rgb(40, 40, 40);
     color: azure;
-    margin-bottom: 10px; /* Agrega un espacio entre los elementos */
+    margin-bottom: 10px;
 }
 
 .contactForm textarea {
     resize: vertical;
 }
 
+/* BOTON DEL FORM */
 .contactForm button[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -157,22 +165,23 @@ body::-webkit-scrollbar {
 }
 
 
+/* ESTILOS PARA LOS MENSAJES DE JAVASCRIPT*/
 
-/* Estilos para el mensaje de resultado */
+
 #resultado {
     margin-top: 20px;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
     max-width: 400px;
-    border: 2px solid transparent; /* Borde transparente por defecto */
+    border: 2px solid transparent; 
     transition: all 0.3s ease;
 }
 
-/* Estilos para mensajes de error */
+
 #resultado.error {
-    border-color: #e74c3c; /* Rojo para errores */
-    background-color: #fdecea;
+    border-color: #e74c3c; 
+    background-color: rgb(40, 40, 40);
     color: #e74c3c;
 }
 
@@ -185,10 +194,9 @@ body::-webkit-scrollbar {
     margin-bottom: 5px;
 }
 
-/* Estilos para mensajes de éxito */
 #resultado.success {
-    border-color: #2ecc71; /* Verde para éxito */
-    background-color: #eafaf1;
+    border-color: #2ecc71; 
+    background-color: rgb(40, 40, 40);
     color: #2ecc71;
 }
 
@@ -200,7 +208,7 @@ body::-webkit-scrollbar {
     margin: 5px 0;
 }
 
-/* Añadir iconos a los mensajes */
+
 #resultado.error li::before {
     content: "⚠️";
     margin-right: 5px;

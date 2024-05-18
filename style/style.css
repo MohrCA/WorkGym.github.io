@@ -1,20 +1,30 @@
+/* RESETEO DE ESTILOS */
 *{
-    
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     font-size: 20px;
     font-family: "Nunito Sans", sans-serif
 }
 
-body{
+
+
+/* ESTILOS PARA EL BODY EN GENERAL */
+body {
     background: 
 		linear-gradient(rgb(53, 53, 53), rgb(0, 0, 0));
-        background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-    
+        overflow-y: scroll;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ESTILOS PARA EL NAV */
+
+
+/* UBICACIÓN DEL MENU  */
 .header{
     background-color: rgb(22, 22, 22);
     display: flex;
@@ -23,6 +33,8 @@ body{
     height: 85px;
     padding: 5px 10%;
 }
+
+/* ESTILOS PARA EL LOGO */
 
 .header .logo{
     cursor: pointer;
@@ -37,6 +49,8 @@ body{
 .header .logo img:hover{
     transform: scale(1.2);
 }
+
+/* ESTILOS PARA LOS LINKS (LAS OTRAS PAGINAS) */
 
 .header .nav-links{
     cursor: pointer;
@@ -62,6 +76,6 @@ body{
 
 .header .nav-links .nav-cont{
     background-color: rgb(216, 151, 29);
-    padding: 4px;
+    padding: 2px 4px;
     border-radius: 6px;
 }
