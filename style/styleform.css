@@ -92,6 +92,7 @@ body::-webkit-scrollbar {
     align-items: flex-start;
     height: auto;
     padding-top: 120px;
+    margin-bottom: 120px;
 }
 
 /* RECUADRO DE FORM */
@@ -105,8 +106,7 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     border: 1px solid azure;
     width: 400px;
-    box-shadow: 0 0 15px 1px rgb(216, 151, 29);
-    
+    box-shadow: 0 0 15px 1px rgb(216, 151, 29); 
 }
 
 .contactForm div {
