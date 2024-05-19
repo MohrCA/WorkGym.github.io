@@ -24,7 +24,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -67,9 +67,10 @@ header {
 
 .header .nav-links li {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 20px;
     color: azure;
     transition: all 0.3s;
+
 }
 
 .header .nav-links li:hover {
@@ -85,10 +86,11 @@ header {
     background-color: rgb(216, 151, 29);
     padding: 2px 4px;
     border-radius: 6px;
+
 }
 
 section {
-    overflow: hidden;
+    display: flex;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 4vw;
@@ -96,6 +98,7 @@ section {
     border-left: none;
     border-right: none;
     border-top: none;
+    flex-direction: column;
 }
 
 .contenedor {
@@ -105,10 +108,15 @@ section {
     font-family: "Nunito Sans", sans-serif, bold;
 }
 
+.contPrincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
 
+}
 
 .contenedor2 {
-    display: flex;
+
     border-radius: 10px;
     border-style: ridge;
     background-color: rgba(128, 128, 128, 0.3);
@@ -116,32 +124,25 @@ section {
     color: aliceblue;
     width: 150px;
     height: 60px;
-    margin-left: 30px;
-    margin-top: 50px;
-    flex: 1;
     text-align: center;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
+    margin-left: 5vh;
+    margin-right: 3vh;
+    padding-top: 9px;
 }
 
 .contenedor3 {
-    display: flex;
+
     border-radius: 10px;
     color: aliceblue;
     border-style: ridge;
     background-color: rgba(128, 128, 128, 0.3);
     width: 150px;
     height: 60px;
-    margin-left: 230px;
-    margin-top: 10px;
-    flex: 1;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
     text-align: center;
+    margin-top: 10vh;
+    margin-right: 3vh;
+    padding-top: 9px;
+
 }
 
 
@@ -153,25 +154,23 @@ section {
     background-color: rgba(128, 128, 128, 0.3);
     width: 150px;
     height: 60px;
-    margin-top: 10px;
-    margin-left: 432px;
-    flex: 1;
     text-align: center;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
+    margin-top: 20vh;
+    padding-top: 9px;
+
 }
 
 .tamImagen {
+
     width: auto;
     height: auto;
     background: url(/imagenes/Background3.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     background-position: right;
     background-position-y: 100px;
+
 }
 
 
@@ -182,7 +181,7 @@ section {
     line-height: 10vw;
     padding-top: 50px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: auto;
     padding-right: 10px;
     border-radius: 5px;
     background-clip: text;
@@ -205,7 +204,7 @@ footer {
     list-style-type: none;
     line-height: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
+    font-size: 55%;
     color: grey;
 }
 
@@ -234,4 +233,5 @@ footer {
     color: azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+
 }
