@@ -1,11 +1,10 @@
 /* RESETEO DE ESTILOS */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif
 }
 
 
@@ -20,12 +19,8 @@ body {
     overflow-y: scroll;
 }
 
-
-header {
-    position: fixed;
-    width: 100%;
-    font-size: 18px;
-    font-family: "Nunito Sans", sans-serif;
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* ESTILOS PARA EL NAV */
@@ -37,9 +32,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    padding: 5px 5%;
-    padding-top: 10px;
+    height: 85px;
+    padding: 5px 10%;
 }
 
 /* ESTILOS PARA EL LOGO */
@@ -69,7 +63,6 @@ header {
     display: inline-block;
     padding: 0 20px;
     color: azure;
-    transition: all 0.3s;
 
 }
 
