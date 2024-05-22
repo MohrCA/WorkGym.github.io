@@ -13,10 +13,10 @@
 
 /* ESTILOS PARA EL BODY EN GENERAL */
 body {
-    background:
+    /*background:
         linear-gradient(rgb(53, 53, 53), rgb(0, 0, 0));
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
     overflow-y: scroll;
 }
 
