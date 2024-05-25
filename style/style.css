@@ -157,7 +157,7 @@ section {
 
     width: auto;
     height: auto;
-    background: url(/imagenes/Background3.jpg);
+    background: url(../imagenes/Background3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
