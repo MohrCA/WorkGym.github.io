@@ -92,6 +92,7 @@ section {
     border-right: none;
     border-top: none;
     flex-direction: column;
+    color: azure;
 }
 
 .contenedor {
