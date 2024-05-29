@@ -1,11 +1,13 @@
 /* RESETEO DE ESTILOS */
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-size: 20px;
     font-family: "Nunito Sans", sans-serif
 }
+
+
 
 
 
@@ -34,6 +36,7 @@ body::-webkit-scrollbar {
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+
 }
 
 /* ESTILOS PARA EL LOGO */
