@@ -1,12 +1,12 @@
 //Array que contiene las imagenes
-var imagenes = [
+let imagenes = [
     "./imagenes/img1.png",
     "./imagenes/img2.jpg",
     "./imagenes/img3.jpeg",
     "./imagenes/img4.jpeg"
 ];
 
-var texto = [
+let texto = [
     "Jorge: De principiante a competidor en carreras de obstáculos en un año, gracias a su dedicación y disciplina.",
     "Sofía: Ha encontrado paz y equilibrio con meditación y yoga, transformando su bienestar en menos de un año.",
     "Pablo: En solo seis meses, ha mejorado su salud y confianza a través de ejercicio y una buena alimentación.",
@@ -14,7 +14,7 @@ var texto = [
 ];
 
 
-var indice = 0;
+let indice = 0;
 
 function mostrarImagen() {
     let actImg = document.querySelector('.img');
