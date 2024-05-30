@@ -111,7 +111,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    font-size: 20px;
 }
 
 .contenedor2 {
