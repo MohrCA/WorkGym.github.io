@@ -21,6 +21,7 @@ function mostrarImagen() {
     let actMsg = document.querySelector('.descrip');
     actImg.src = imagenes[indice];
     actMsg.textContent = texto[indice];
+    texto.classname = "textos";
 }
 
 function siguiente() {
