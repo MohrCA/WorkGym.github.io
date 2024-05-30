@@ -93,9 +93,13 @@ section {
 .texto {
 
     width: 50em;
-    padding-top: 3vh;
-
-
+    background-color: rgb(22, 22, 22);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 1px rgb(216, 151, 29);
+    max-width: 900px;
+    color:azure; 
+    margin-top: 80px;
 
 
 }
@@ -153,6 +157,7 @@ section {
 }
 .carrusel .imagenes .descrip {
     margin-top: 60px;
+    
 }
 
 p {
