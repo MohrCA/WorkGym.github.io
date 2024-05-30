@@ -98,6 +98,7 @@ section {
     border-top: none;
     flex-direction: column;
     color: azure;
+     font-family: "Nunito Sans", sans-serif, bold;
 }
 
 .contenedor {
