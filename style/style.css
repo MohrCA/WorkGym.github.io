@@ -3,7 +3,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
+    
     font-family: "Nunito Sans", sans-serif
 }
 
@@ -16,6 +16,7 @@
 body {
     background:
         linear-gradient(rgb(53, 53, 53), rgb(0, 0, 0));
+    
     background-attachment: fixed;
     background-size: cover;
     overflow-y: scroll;
@@ -36,6 +37,7 @@ body::-webkit-scrollbar {
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    font-size: 20px;
 
 }
 
@@ -109,7 +111,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: start;
-
+    font-size: 20px;
 }
 
 .contenedor2 {
