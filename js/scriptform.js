@@ -11,16 +11,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const telefono = document.getElementById("telefono").value.trim();
         const mensaje = document.getElementById("mensaje").value.trim();
 
+        //ARREGLO PARA ALMECENAR LOS PUSH DE ERRORES
         let errores = [];
 
-        // Validar campo nombre
+        //VALIDACIONES!!
+
+        //VALIDAR NOMBRE
         if (nombre === "") {
             errores.push("El campo nombre es obligatorio.");
         } else if (nombre.length > 50) {
             errores.push("El campo nombre no puede tener más de 50 caracteres.");
+        }else if (!/^[a-zA-Z ]+$/.test(nombre)) {
+            errores.push("El nombre debe contener solo letras.");
         }
 
-        // Validar campo email
+        //VALIDAR EMAIL 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === "") {
             errores.push("El campo email es obligatorio.");
@@ -28,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             errores.push("El campo email debe ser un email válido.");
         }
 
-        // Validar campo teléfono
+        //VALIDAR TELEFONO
         const telefonoRegex = /^\d{10}$/;
         if (telefono === "") {
             errores.push("El campo teléfono es obligatorio.");
@@ -36,17 +41,21 @@ document.addEventListener("DOMContentLoaded", function() {
             errores.push("El campo teléfono debe contener 10 dígitos numéricos.");
         }
 
-        // Validar campo mensaje
+        //VALIDAR MENSAJE
         if (mensaje === "") {
             errores.push("El campo mensaje es obligatorio.");
         } else if (mensaje.length > 300) {
             errores.push("El campo mensaje no puede tener más de 300 caracteres.");
         }
 
-        // Mostrar errores o enviar datos
+        //CONDICIONAL PARA MOSTRAR LOS MENSAJES TANTO PARA ERRORES COMO PARA LOS DE ENVIADO CORRECTAMENTE!
+
+        //LOS ERRORES
         if (errores.length > 0) {
             resultado.innerHTML = "<ul><li>" + errores.join("</li><li>") + "</li></ul>";
-            resultado.className = "error"; // Añadir clase de error
+            resultado.className = "error"; 
+
+        //DATOS CORRECTOS
         } else {
             resultado.innerHTML = `
                 <h3>Datos enviados correctamente:</h3>
@@ -55,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><strong>Teléfono:</strong> ${telefono}</p>
                 <p><strong>Mensaje:</strong> ${mensaje}</p>
             `;
-            resultado.className = "success"; // Añadir clase de éxito
+            resultado.className = "success"; 
         }
 
-        resultado.scrollIntoView({ behavior: 'smooth' }); // Desplaza el mensaje a la vista
+        resultado.scrollIntoView({ behavior: 'smooth' }); 
     });
 });
 

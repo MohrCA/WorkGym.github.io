@@ -1,11 +1,11 @@
-//Array que contiene las imagenes
+//ARRAY QUYE CONTIENE LAS IMÁGENES
 let imagenes = [
     "./imagenes/img1.png",
     "./imagenes/img2.jpg",
     "./imagenes/img3.jpeg",
     "./imagenes/img4.jpeg"
 ];
-
+//ARRAY DE LOS TEXTOS
 let texto = [
     "Jorge: De principiante a competidor en carreras de obstáculos en un año, gracias a su dedicación y disciplina.",
     "Sofía: Ha encontrado paz y equilibrio con meditación y yoga, transformando su bienestar en menos de un año.",
@@ -24,6 +24,8 @@ function mostrarImagen() {
     texto.classname = "textos";
 }
 
+
+// BOTONES AVANZAR Y ATRÁS
 function siguiente() {
     if (indice < imagenes.length - 1) {
         indice++;

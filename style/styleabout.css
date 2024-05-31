@@ -88,7 +88,7 @@ body .section{
 
 }
 
-/* Estilos de la sección */
+/* ESTILOS DEL ARTÍCULO */
 .section {
 
     background-color: rgb(22, 22, 22);
@@ -123,7 +123,7 @@ body .section{
     text-align: justify;
 }
 
-/* Estilos de las listas */
+
 .enfoque-lista {
     list-style-type: none;
     padding-left: 0;
@@ -137,12 +137,12 @@ body .section{
     color: rgb(216, 151, 29);
 }
 
-/* Estilos de los contenedores */
+
 .contenedor1, .contenedor2, .contenedor3, .contenedor4 {
     margin-bottom: 40px;
 }
 
-/* Estilos de los coaches */
+
 .coach {
     background-color: rgb(53, 53, 53);
     border-radius: 10px;
